@@ -40,6 +40,9 @@ print("-------------------------------------------\n"
 # Hint: Remember to use f-strings for clear formatting.
 #
 # Write your code below:
+name = input("Enter your name ").strip()
+age = int(input("Enter your age: "))
+print(f"HEllo,{name}! You are {age} years old")
 
 
 
@@ -64,15 +67,22 @@ print("-------------------------------------------\n"
 # Output: "Nice choice!"
 #
 # Write your code below:
+colour = input("what is your favourite colour? ").lower()
+if colour == "blue":
+    print("Nice choice")
+elif colour == "yellow":
+    print("That's a bright choice!")
+else:
+    print("That's an interesting colour!")
 
 
 
 
 # Task 3: Loops Review (for and while)
 # -------------------------------------------
-print("-------------------------------------------\n"
-    + "Task 3: Loops Review (for and while)\n"
-    + "-------------------------------------------")
+#print("-------------------------------------------\n"
+#    + "Task 3: Loops Review (for and while)\n"
+#    + "-------------------------------------------")
 # Here, you’ll combine loops with input and conditions.
 #
 # TODO:
@@ -96,7 +106,13 @@ print("-------------------------------------------\n"
 # (loops again)
 #
 # Write your code below:
-
+repeat = "yes"
+while repeat.lower() == "yes":
+    numbers = int(input("Enter a number between 1 and 10:\n"))
+    print(f"Multiplication table for {numbers}:\n")
+    for i in range(1, 11):
+        print(f"{numbers} x {i} = {numbers * i}\n")
+    repeat = input("Do you want to try another number?(yes/no):\n")
 
 
 
@@ -135,7 +151,10 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
+firstname = input("what is your First name?\n").lower()
+favouritenumber = input("What is your Favourite number?\n")
+username = firstname + favouritenumber
+print(f"Your username could be {username}")
 
 
 # Extension 2: Counting with Conditions
